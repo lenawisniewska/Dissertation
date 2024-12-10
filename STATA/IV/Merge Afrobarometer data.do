@@ -41,7 +41,7 @@ tostring respno, replace
 generate Round = 6
 tostring Round, replace
 generate respno_Round = respno + "_" + Round
-save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/MOZ_r6.dta", replace
+save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/MOZ_r6.1.dta", replace
 
 use "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/TAN_r6.dta", clear
 tostring respno, replace
@@ -88,25 +88,25 @@ keep respno country Round respno_Round gender electricity employment education a
 save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/merge_r6_dropped.dta", replace
 
 //NOW REPEAT FOR ROUND 7
-//clear
-//import excel "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/GHA_r7.xlsx", firstrow
-//save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/GHA_r7.dta", replace
+clear
+import excel "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/GHA_r7.xlsx", firstrow
+save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/GHA_r7.dta", replace
 
-//clear
-//import excel "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/MOZ_r7.xlsx", firstrow
-//save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/MOZ_r7.dta", replace
+clear
+import excel "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/MOZ_r7.xlsx", firstrow
+save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/MOZ_r7.dta", replace
 
-//clear
-//import excel "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/TAN_r7.xlsx", firstrow
-//save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/TAN_r7.dta", replace
+clear
+import excel "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/TAN_r7.xlsx", firstrow
+save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/TAN_r7.dta", replace
 
-//clear
-//import excel "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/SAF_r7.xlsx", firstrow
-//save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/SAF_r7.dta", replace
+clear
+import excel "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/SAF_r7.xlsx", firstrow
+save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/SAF_r7.dta", replace
 
-//clear
-//import excel "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/NIG_r7.xlsx", firstrow
-//save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/NIG_r7.dta", replace
+clear
+import excel "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/NIG_r7.xlsx", firstrow
+save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/NIG_r7.dta", replace
 
 use "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/NIG_r7.dta", clear
 tostring RESPNO, replace
