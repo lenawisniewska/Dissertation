@@ -1,0 +1,117 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{longtable} % Required for long tables
+\usepackage{amsmath} % for mathematical symbols and environments
+\usepackage{float}% If comment this, figure moves to Page 2
+\usepackage{lipsum}
+\usepackage{array} % Required for customizing row spacing
+\geometry{left=0.5in,right=0.5in,top=0.2in,bottom=0.2in}
+\onehalfspacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.3em}
+
+\begin{document}
+
+\newpage
+Table 1: Literature Review
+\renewcommand{\arraystretch}{1.5}
+\begin{table}[htbp]
+\small
+\begin{tabularx}{\linewidth}{>{\raggedright}p{1.3in} X}
+\hline
+\textbf{Reference} & \textbf{Summary} \\ % Make column headings bold
+\hline
+\multicolumn{2}{c}{\textbf{(1) Impact of infrastructure on development}} \\
+Banerjee, Duflo, and Qian (2007) & Explore the effect of access to transportation networks in China, finding that proximity to networks has a positive effect on GDP pc, but not GDP pc growth. Use the fact that networks tend to connect historical cities to address endogeneity.\\
+Cutler and Miller (2005) & Study the impact of clean water technologies on mortality in major US cities in the early 20th century, finding that clean water was responsible for almost half of total mortality reduction, with a social rate of return of over 23 to 1. \\
+Duflo and Pande (2006) & Investigate the causal effect of large dams on productivity and distribution in India using river gradient as an IV. Find that dams increase poverty, but not agricultural production, whereas areas downstream see the opposite effects via increased irrigation.\\
+\multicolumn{2}{c}{Impact of electrification} \\
+Abbasi, Lebrand, Mongoue, Pongou, and Zhang (2022) & Study the impact of road and electricity investments on job creation in 27 sub-Saharan African countries, finding that they independently and interactively boost employment, with complementary effects driving rural structural transformation and a shift toward higher-skilled occupations.\\
+Akpandjar and Kitchens (2017) & Use the rollout of electricity in Ghana between 2000 and 2010 to examine the relationship between electrification, employment structure, and household structure. Find movement from agriculture to higher-skilled occupations, reduced wood fuel use at home and fertility, and increased educational investments in children.\\
+Assunção, Lipscomb, Mobarak, and Szerman (2014) &
+Using an instrumental variables strategy, find that electrification in Brazil between 1960 and 2000 enabled irrigation, increased productivity, intensified land cultivation, reduced cattle grazing, and decreased overall deforestation despite agricultural expansion.\\
+Burlig and Preonas (2021) & Estimate the effects of India’s national electrification program, RGGVY. Find that while it meaningfully increased electricity access, economic impacts after 3-5 years were limited; full electrification increased welfare for larger, but not small, villages.\\
+Fried and Lagakos (2021) & Using a multi-sector spatial model and evidence from rural Ethiopia, find support for rural electrification facilitating structural change of village economies and slowing out-migration.\\
+Lee, Miguel, and Wolfram (2020) & Use experimental data from Lee, Miguel, and Wolfram (2019), where randomly selected households in rural Kenya are connected to the grid, to show that households with higher willingness to pay may gain more from electrification. This might be driven by complementary inputs. \\
+Lewis and Severnini (2017) & Investigate the short- and long-run effect of rural electrification in the U.S. In the short-run, find increased agricultural employment, farm population, and property values. In the long-run, find that gaining early access to electricity was associated with higher economic growth for decades.\\
+Lipscomb, Mobarak, and Barham (2013) & Estimate large positive effects on development of electrification in Brazil in 1960-2000, which are underestimated if grid targeting is ignored. Argue that rising labor productivity across sectors is the likely channel.\\
+Ryan (2021) & Studying the potential benefits of more integration in the Indian market for electricity, finds that an increase of transmission capacity in congested regions could increase market surplus by 22\%, covering cost of investment. \\
+\hline
+\end{tabularx}
+\end{table}
+
+\newpage
+\renewcommand{\arraystretch}{1.5}
+\begin{table}[htbp]
+\small
+\begin{tabularx}{\linewidth}{>{\raggedright}p{1.3in} X}
+\hline
+\multicolumn{2}{c}{\textbf{(2) Quality of factors}} \\
+Banerjee, Cole, Duflo, and Linden (2007) & Based on the observation that while education availability has increased, its quality in developing countries remains dismal, run randomized experiments testing two interventions - a remedial education program and a computer-assisted learning program - in urban India.\\
+Das, Hammer, and Leonard (2008) & An overview of work using medical vignettes and direct observation of doctor-patient interaction, which finds that healthcare quality in low-income countries is “very low” as a result of doctors’ knowledge compounded with low effort.\\
+\multicolumn{2}{c}{Quality of electricity: impact of outages} \\
+Abeberese, Ackah, and Asuming (2019) & Using an electricity rationing program in Ghana for arguably exogenous variation in outages, find that eliminating outages could raise productivity. Coping strategies include shifting to less electricity-intensive products and generator use, but the latter proves unable to insulate from outage shocks for productivity. \\
+Alam (2013) & Studies the impact of electricity shortages given inter-industry heterogeneity in adaptation, finding that higher frequency of outages lowers output and profit only in some electricity-intensive industries.\\
+Allcott, Collard-Wexler, and O'Connell (2016) & Estimate the impact of electricity shortages on revenues, producer surplus, and productivity of Indian manufacturers. Find the first two to be reduced by 5-10\% by India’s average reported shortage level, whereas productivity is significantly less impacted.\\
+Andersen and Dalgaard (2013) & Estimate the effect of power outages on Sub-Saharan African economic growth in 1995-2007. Obtained using lightning density as an instrument for outages, their findings suggest that weak power infrastructure is a substantial drag on growth.\\
+Chakravorty, Pelli, and Marchand (2014) & Estimate the increase in household income caused by improvements in electricity access in rural India. Using district-level density of transmission cables as an IV, find that grid connection increases non-agricultural incomes by 9\%, whereas connection and higher quality (fewer outages and more hours) - by 28.6\%. Suggests that quality is equally as important as a connection.\\
+Fried and Lagakos (2023) & Build a dynamic macroeconomic model to study the long-run general-equilibrium impact of power outages on productivity, which suggests small short-run effects of outage elimination, but larger effects in the long-run.\\
+\hline
+\hline
+\end{tabularx}
+\end{table}
+
+\newpage
+\renewcommand{\arraystretch}{1.5}
+\begin{table}[htbp]
+\small
+\begin{tabularx}{\linewidth}{>{\raggedright}p{1.3in} X}
+\hline
+\textbf{Reference} & \textbf{Summary} \\ % Make column headings bold
+\hline
+\multicolumn{2}{c}{\textbf{(3) Determinants of female labour force participation rate}} \\
+Becker (1965) & A highly influential model of household behavior, which combined Marshallian demand functions for goods with choices about time use, including labour supply. \\
+Goldin (1994) & Shows that as countries develop, the LFPR of married women has a U-shape, first declining, in part due to an income effect, and then rising, due to a stronger substitution effect as women enter white-collar work. \\
+Goldin and Katz (2000) & Study the link between the rise of the birth-control pill and women’s participation in professional occupations. Explore channels such as control over fertility and increased age at first marriage, which reduced costs of career investment. \\
+Klasen (2019) & Seeks to explain heterogeneity in FLFP level and trend in developing countries, which he argues is inconsistent with U-hypothesis. Among others, argues that impact of appliances may differ between developed and developing countries due to: 1) relative cost of appliances, 2) electricity access acting as a constraint, 3) presence of other constraints to female employment.\\
+Mammen and Paxson (2000) & Using data from India and Thailand, find that FLFPR declines and then rises with development. Also, women increasingly work as paid employees, and education gender gap and fertility decline.\\
+\multicolumn{2}{c}{\textbf{Intersection of (1) and (3): impact of electrification for female employment}} \\
+\multicolumn{2}{c}{Developed countries} \\
+Bailey and Collins (2011) & Argue that the US baby boom was not caused by advances in household technology. Present a model which reconciles this with economic theory by considering other home-produced goods (e.g. clean clothing, clean/ironed/homemade clothes) as substitutes with children.\\
+Cavalcanti and Tavares (2008) & Use new data on the price of home appliances to estimate impact on female labour supply. Find that a decrease in price of appliances relative to CPI leads to a significant increase in FLFP in OECD countries. \\
+Coen-Pirani, León, and Lugauer (2010) & To estimate the causal impact of home appliance ownership on the LFPR of married women in 1960/1970 US, use average ownership of appliances by single women living in the same US state as an instrument for married women’s ownership. Evidence supports the claim that appliance diffusion increased married women’s LFPR.\\
+Greenwood, Seshadri, and Vandenbroucke (2005) & Argued that the US baby boom can be explained by progress in household technology, which lowered the cost of having children.\\
+Greenwood, Seshadri, and Yorukoglu (2005) & Embed a Beckerian model of household production in a dynamic general equilibrium framework, finding that new/improved household technologies could explain over half of the observed rise in FLFP in the US between 1900-1980.\\
+Vidart (2024) & Presents theoretical and empirical evidence in support of electrification raising FLFP by increasing opportunities for skilled women.\\
+\multicolumn{2}{c}{Developing countries} \\
+Dinkelman (2011) & Studies the impact of rural electrification on employment growth in South Africa. Using IV and FE approaches, find that electrification significantly increased female employment within five years by reducing home production burdens and enabling microenterprises. New infrastructure increases both male and female hours of work.\\
+Dasso and Fernandez (2015) & Study the effect of a rural electrification program on labor market outcomes in Peru. Use diff-in-diff and FE, finding that for males, it increases hours of work and lowers probability of second occupation, and for females, it increases employment and earnings.\\
+Li, An, Zhang, Lee, Yu (2024) & Using a national-level dataset of 78 developing countries from 2000 to 2020, find that clean cooking fuel access increases FLFPR and electricity access lowers female unemployment.\\
+\end{tabularx}
+\end{table}
+
+\newpage
+\renewcommand{\arraystretch}{1.5}
+\begin{table}[htbp]
+\small
+\begin{tabularx}{\linewidth}{>{\raggedright}p{1.3in} X}
+\hline
+\textbf{Reference} & \textbf{Summary} \\ % Make column headings bold
+\hline
+\multicolumn{2}{c}{\textbf{CAPE×P as a proxy for lightning and lightning as an instrumental variable for electricity outages}} \\
+Dewan et al. (2017) & Find a significant correlation between actual lightning strikes and
+CAPE×P in Bangladesh. CAPE×P is found to explain 89\% of the variance in lightning strikes on a monthly scale. \\
+Romps et al. (2014) & Find that CAPE×Precipitation explains 77\% of the variance in cloud-to-ground lightning flashes over the contiguous United States.\\
+Adepitan and Oladiran (2012) & Find that lightning accounted for approximately 10\% of the random outages experienced in Ijebu province. \\
+\hline
+\end{tabularx}
+\end{table}
+
+\end{document}
