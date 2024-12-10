@@ -1,0 +1,240 @@
+\documentclass{article}
+\usepackage{booktabs} 
+\usepackage{multirow} 
+\pagenumbering{gobble}
+\usepackage{booktabs} 
+\usepackage{threeparttable} 
+\usepackage{adjustbox}
+\usepackage{float}
+\usepackage[a4paper, top=0.7in, bottom=0.7in]{geometry}
+\raggedbottom
+
+\begin{document}
+\clearpage
+\vspace{-2em}
+\noindent
+\begin{table}[H]
+\centering
+\caption{R6 Distribution by Gender, Location, and Country}
+\begin{tabular}{llrr}
+\toprule
+\textbf{Category} & \textbf{Subcategory} & \textbf{Count} & \textbf{\% of Total} \\
+\midrule
+
+\multirow{3}{*}{Gender} 
+    & Male & 26,801.0 & 49.7\% \\
+    & Female & 27,134.0 & 50.3\% \\
+    & \textbf{Total} & \textbf{53,935.0} & \textbf{100.0\%} \\
+\midrule
+
+\multirow{5}{*}{Location} 
+    & Urban & 22,089.0 & 40.9\% \\
+    & Rural & 31,246.0 & 57.9\% \\
+    & Semiurban & 512.0 & 0.9\% \\
+    & Periurban & 88.0 & 0.2\% \\
+    & \textbf{Total} & \textbf{53,935.0} & \textbf{100.0\%} \\
+\midrule
+
+\multirow{37}{*}{Country} 
+    & Algeria & 1,200.0 & 2.2\% \\
+    & Benin & 1,200.0 & 2.2\% \\
+    & Botswana & 1,200.0 & 2.2\% \\
+    & Burkina Faso & 1,200.0 & 2.2\% \\
+    & Burundi & 1,200.0 & 2.2\% \\
+    & Cameroon & 1,182.0 & 2.2\% \\
+    & Cape Verde & 1,200.0 & 2.2\% \\
+    & Cote d'Ivoire & 1,199.0 & 2.2\% \\
+    & Egypt & 1,198.0 & 2.2\% \\
+    & Gabon & 1,198.0 & 2.2\% \\
+    & Ghana & 2,400.0 & 4.4\% \\
+    & Guinea & 1,200.0 & 2.2\% \\
+    & Kenya & 2,397.0 & 4.4\% \\
+    & Lesotho & 1,200.0 & 2.2\% \\
+    & Liberia & 1,199.0 & 2.2\% \\
+    & Madagascar & 1,200.0 & 2.2\% \\
+    & Malawi & 2,400.0 & 4.4\% \\
+    & Mali & 1,200.0 & 2.2\% \\
+    & Mauritius & 1,200.0 & 2.2\% \\
+    & Morocco & 1,200.0 & 2.2\% \\
+    & Mozambique & 2,400.0 & 4.4\% \\
+    & Namibia & 1,200.0 & 2.2\% \\
+    & Niger & 1,200.0 & 2.2\% \\
+    & Nigeria & 2,400.0 & 4.4\% \\
+    & São Tomé and Príncipe & 1,196.0 & 2.2\% \\
+    & Senegal & 1,200.0 & 2.2\% \\
+    & Sierra Leone & 1,191.0 & 2.2\% \\
+    & South Africa & 2,390.0 & 4.4\% \\
+    & Sudan & 1,200.0 & 2.2\% \\
+    & Swaziland & 1,200.0 & 2.2\% \\
+    & Tanzania & 2,386.0 & 4.4\% \\
+    & Togo & 1,200.0 & 2.2\% \\
+    & Tunisia & 1,200.0 & 2.2\% \\
+    & Uganda & 2,400.0 & 4.4\% \\
+    & Zambia & 1,199.0 & 2.2\% \\
+    & Zimbabwe & 2,400.0 & 4.4\% \\
+    & \textbf{Total} & \textbf{53,935.0} & \textbf{100.0\%} \\
+\bottomrule
+
+\end{tabular}
+\end{table}
+
+\newpage
+\clearpage
+\begin{table}[ht]
+\centering
+\caption{R7 Distribution by Gender, Location, and Country}
+\begin{tabular}{llrr}
+\toprule
+\textbf{Category} & \textbf{Subcategory} & \textbf{Count} & \textbf{\% of Total} \\
+\midrule
+
+\multirow{4}{*}{Gender} 
+    & Male & 22,880.0 & 49.9\% \\
+    & Female & 22,936.0 & 50.0\% \\
+    & Missing & 7.0 & 0.02\% \\
+    & \textbf{Total} & \textbf{45,823.0} & \textbf{100.0\%} \\
+\midrule
+
+\multirow{5}{*}{Location} 
+    & Urban & 19,828.0 & 43.3\% \\
+    & Rural & 25,308.0 & 55.2\% \\
+    & Semiurban & 647.0 & 1.4\% \\
+    & Periurban & 40.0 & 0.1\% \\
+    & \textbf{Total} & \textbf{45,823.0} & \textbf{100.0\%} \\
+\midrule
+
+\multirow{36}{*}{Country} 
+    & Algeria & 1,200.0 & 2.6\% \\
+    & Benin & 1,198.0 & 2.6\% \\
+    & Botswana & 1,200.0 & 2.6\% \\
+    & Burkina Faso & 1,200.0 & 2.6\% \\
+    & Burundi & 1,202.0 & 2.6\% \\
+    & Cameroon & 1,200.0 & 2.6\% \\
+    & Cape Verde & 1,200.0 & 2.6\% \\
+    & Cote d'Ivoire & 1,199.0 & 2.6\% \\
+    & Egypt & 1,200.0 & 2.6\% \\
+    & Gabon & 2,400.0 & 5.2\% \\
+    & Ghana & 1,194.0 & 2.6\% \\
+    & Guinea & 1,599.0 & 3.5\% \\
+    & Kenya & 1,200.0 & 2.6\% \\
+    & Lesotho & 1,200.0 & 2.6\% \\
+    & Liberia & 1,200.0 & 2.6\% \\
+    & Madagascar & 1,200.0 & 2.6\% \\
+    & Malawi & 1,200.0 & 2.6\% \\
+    & Mali & 1,200.0 & 2.6\% \\
+    & Mauritius & 1,200.0 & 2.6\% \\
+    & Morocco & 2,392.0 & 5.2\% \\
+    & Mozambique & 1,200.0 & 2.6\% \\
+    & Namibia & 1,200.0 & 2.6\% \\
+    & Niger & 1,600.0 & 3.5\% \\
+    & Nigeria & 1,200.0 & 2.6\% \\
+    & São Tomé and Príncipe & 1,200.0 & 2.6\% \\
+    & Senegal & 1,200.0 & 2.6\% \\
+    & Sierra Leone & 1,840.0 & 4.0\% \\
+    & South Africa & 1,200.0 & 2.6\% \\
+    & Sudan & 2,400.0 & 5.2\% \\
+    & Swaziland & 1,200.0 & 2.6\% \\
+    & Tanzania & 1,199.0 & 2.6\% \\
+    & Togo & 1,200.0 & 2.6\% \\
+    & Tunisia & 1,200.0 & 2.6\% \\
+    & Uganda & 1,200.0 & 2.6\% \\
+    & \textbf{Total} & \textbf{45,823.0} & \textbf{100.0\%} \\
+\bottomrule
+
+\end{tabular}
+\end{table}
+
+\newpage
+\begin{table}[t]
+\centering
+\caption{Afrobarometer Variable Summary Statistics}
+\begin{tabular}{lccccc} % Define columns
+\toprule
+\textbf{Variable} & \textbf{Mean} & \textbf{Std. Dev.} & \textbf{Min.} & \textbf{Max.} & \textbf{N} \\
+\midrule
+Employment          & 0.5553 & 0.4969 & 0 & 1 & 41,629 \\
+Outages          & 0.7739 & 0.4183 & 0 & 1 & 67,836 \\
+No Education         & 0.1543 & 0.3612 & 0 & 1 & 68,183 \\
+Informal        & 0.0542 & 0.2265 & 0 & 1 & 68,183 \\
+Primary         & 0.2544 & 0.4355 & 0 & 1 & 68,183 \\
+Secondary       & 0.3870 & 0.4871 & 0 & 1 & 68,183 \\
+Tertiary        & 0.1377 & 0.3446 & 0 & 1 & 68,183 \\
+Age              & 37.2506 & 14.8743 & 18 & 106 & 67,917 \\
+Female          & 0.5030 & 0.5000 & 0 & 1 & 68,183 \\
+Mobile Network Coverage  & 0.9054 & 0.2927 & 0 & 1 & 67,915 \\
+\midrule
+\textbf{Observations} & \multicolumn{5}{r}{\textbf{68,183}} \\
+\bottomrule
+\end{tabular}
+\end{table}\
+
+\newpage
+\clearpage
+\begin{table}[htbp]
+\centering
+\caption{Employment and Electricity Outages (OLS): survey round FE}
+\label{tab:employment_outages}
+\begin{threeparttable}
+\begin{tabular}{lcccc}
+\toprule
+ & \textbf{Employed (0/1)} \\ 
+\midrule
+\textbf{Outage (0/1)} & -0.0914*** &  \\ 
+ & (0.0060) \\ 
+\textbf{Female (0/1)} & -0.0707*** & \\ 
+ & (0.0046) \\ 
+\textbf{Age} & 0.0320*** &  \\ 
+ & (0.0009) \\ 
+\textbf{Age Squared} & -0.0003*** & \\ 
+ & (0.00001) \\ 
+\textbf{Mobile Network in PSU (0/1)} & 0.0251*** &  \\ 
+ & (0.0084) \\ 
+\textbf{Constant} & -0.0763*** & \\ 
+ & (0.0206) \\ 
+\midrule
+Observations & 40,628 \\
+R-squared & 0.1474 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\footnotesize
+\item Notes: Standard errors in parentheses. *** p$<$0.01, ** p$<$0.05, * p$<$0.1. Regression includes fixed effects for education, country codes, and Afrobarometer survey rounds.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Employment and Electricity Outages (OLS): year FE}
+\label{tab:employment_outages}
+\begin{threeparttable}
+\begin{tabular}{lcccc}
+\toprule
+ & \textbf{Employed (0/1)} \\ 
+\midrule
+\textbf{Outage (0/1)} & -0.0845*** \\ 
+ & (0.0060) \\ 
+\textbf{Female (0/1)} & -0.0724*** \\ 
+ & (0.0046) \\ 
+\textbf{Age} & 0.0321*** \\ 
+ & (0.0009) \\ 
+\textbf{Age Squared} & -0.0003*** \\ 
+ & (0.00001) \\ 
+\textbf{Mobile Network in PSU (0/1)} & 0.0197** \\ 
+ & (0.0084) \\ 
+\textbf{Constant} & -0.0752*** \\ 
+ & (0.0205) \\ 
+\midrule
+Observations & 40,628 \\ 
+R-squared & 0.1536 \\ 
+\bottomrule
+\end{tabular}
+
+\begin{tablenotes}
+\footnotesize
+\item Notes: Standard errors in parentheses. *** p$<$0.01, ** p$<$0.05, * p$<$0.1. Regression includes fixed effects for education, country codes, and years.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+\end{document}
