@@ -21,19 +21,20 @@ clear
 import excel "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/NIG_r6.xlsx", firstrow
 save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/NIG_r6.dta", replace
 
+//preparing for merge:
 use "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/NIG_r6.dta", clear
 tostring respno, replace
 generate Round = 6
 tostring Round, replace
 generate respno_Round = respno + "_" + Round
-save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/NIG_r6.dta", replace
+save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/NIG_r6.1.dta", replace
 
 use "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/GHA_r6.dta", clear
 tostring respno, replace
 generate Round = 6
 tostring Round, replace
 generate respno_Round = respno + "_" + Round
-save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/GHA_r6.dta", replace
+save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/GHA_r6.1.dta", replace
 
 use "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/MOZ_r6.dta", clear
 tostring respno, replace
@@ -47,20 +48,21 @@ tostring respno, replace
 generate Round = 6
 tostring Round, replace
 generate respno_Round = respno + "_" + Round
-save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/TAN_r6.dta", replace
+save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/TAN_r6.1.dta", replace
 
 use "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/SAF_r6.dta", clear
 tostring respno, replace
 generate Round = 6
 tostring Round, replace
 generate respno_Round = respno + "_" + Round
-save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/SAF_r6.dta", replace
+save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/SAF_r6.1.dta", replace
 
+//merge:
 * Start with the first file
-use "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/GHA_r6.dta", clear
+use "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/GHA_r6.1.dta", clear
 
 * List of other files to merge
-local files "MOZ_r6.dta TAN_r6.dta SAF_r6.dta NIG_r6.dta"
+local files "MOZ_r6.1.dta TAN_r6.1.dta SAF_r6.1.dta NIG_r6.1.dta"
 
 * Loop through files and merge
 foreach file in `files' {
@@ -108,47 +110,47 @@ save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/merge_r6_dro
 
 use "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/NIG_r7.dta", clear
 tostring RESPNO, replace
-//generate Round = 7
-//generate country = 24
+generate Round = 7
+generate country = 24
 tostring Round, replace
-//generate respno_Round = RESPNO + "_" + Round
-save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/NIG_r7.dta", replace
+generate respno_Round = RESPNO + "_" + Round
+save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/NIG_r7.1.dta", replace
 
 use "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/GHA_r7.dta", clear
 tostring RESPNO, replace
-//generate Round = 7
-//generate country = 11
+generate Round = 7
+generate country = 11
 tostring Round, replace
-//generate respno_Round = RESPNO + "_" + Round
-save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/GHA_r7.dta", replace
+generate respno_Round = RESPNO + "_" + Round
+save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/GHA_r7.1.dta", replace
 
 use "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/MOZ_r7.dta", clear
 tostring RESPNO, replace
-//generate Round = 7
-//generate country = 21
+generate Round = 7
+generate country = 21
 tostring Round, replace
 generate respno_Round = RESPNO + "_" + Round
-save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/MOZ_r7.dta", replace
+save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/MOZ_r7.1.dta", replace
 
 use "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/TAN_r7.dta", clear
 tostring RESPNO, replace
-//generate Round = 7
-//generate country = 31
+generate Round = 7
+generate country = 31
 tostring Round, replace
-//generate respno_Round = RESPNO + "_" + Round
-save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/TAN_r7.dta", replace
+generate respno_Round = RESPNO + "_" + Round
+save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/TAN_r7.1.dta", replace
 
 use "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/SAF_r7.dta", clear
 tostring RESPNO, replace
-//generate Round = 7
-//generate country = 28
+generate Round = 7
+generate country = 28
 tostring Round, replace
-//generate respno_Round = RESPNO + "_" + Round
-save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/SAF_r7.dta", replace
+generate respno_Round = RESPNO + "_" + Round
+save "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/SAF_r7.1.dta", replace
 
 //MERGE:
-use "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/GHA_r7.dta", clear
-local files "MOZ_r7.dta TAN_r7.dta SAF_r7.dta NIG_r7.dta"
+use "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/GHA_r7.1.dta", clear
+local files "MOZ_r7.1.dta TAN_r7.1.dta SAF_r7.1.dta NIG_r7.1.dta"
 foreach file in `files' {
     merge 1:1 respno_Round using "/Users/lenawisniewska/Desktop/Diss/IV data/afrobarometer data/`file'", force    
      drop _merge
