@@ -92,9 +92,3 @@ reghdfe employ outage female age agesq pct_cov_234G, abs (edu ctycode Afro_round
 reg employ outage female age agesq pct_cov_234G
 
 save "merged_droppedvars_OLS.dta", replace
-
-//probit employ outageM AGE if GENDER == 2 // coeff for women is  -.2863728 
-
-//probit employ outageM AGE if GENDER == 1 // coeff for men is -.4117658 
-
-//probit employ outageM AGE i.GENDER c.outageM#i.GENDER
